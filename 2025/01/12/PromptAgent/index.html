@@ -4,17 +4,17 @@
   <meta charset="utf-8">
   
   
-  <title>PromptAgent Strategic Planning With Language Models Enables Expert-Level Prompt Optimization | Hexo</title>
+  <title>PromptAgent | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="PDF.js PDF Viewer                          &#x2F;&#x2F; 设置 PDF 文件的路径         const url &#x3D; &#39;.&#x2F;promptagent.pdf&#39;; &#x2F;&#x2F; 确保 PDF 文件相对于 HTML 文件的路径正确         const container &#x3D; document.getElementById(&#39;pdf-">
+  <meta name="description" content="const url &#x3D; &#39;&#x2F;assets&#x2F;pdf&#x2F;promptagent.pdf&#39;; &#x2F;&#x2F; PDF 文件的路径，确保与 Hexo 部署路径一致     const container &#x3D; document.getElementById(&#39;pdf-container&#39;);     const pdfjsLib &#x3D; window[&#39;pdfjs-dist&#x2F;build&#x2F;pdf&#39;];">
 <meta property="og:type" content="article">
-<meta property="og:title" content="PromptAgent Strategic Planning With Language Models Enables Expert-Level Prompt Optimization">
+<meta property="og:title" content="PromptAgent">
 <meta property="og:url" content="http://example.com/2025/01/12/PromptAgent/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="PDF.js PDF Viewer                          &#x2F;&#x2F; 设置 PDF 文件的路径         const url &#x3D; &#39;.&#x2F;promptagent.pdf&#39;; &#x2F;&#x2F; 确保 PDF 文件相对于 HTML 文件的路径正确         const container &#x3D; document.getElementById(&#39;pdf-">
+<meta property="og:description" content="const url &#x3D; &#39;&#x2F;assets&#x2F;pdf&#x2F;promptagent.pdf&#39;; &#x2F;&#x2F; PDF 文件的路径，确保与 Hexo 部署路径一致     const container &#x3D; document.getElementById(&#39;pdf-container&#39;);     const pdfjsLib &#x3D; window[&#39;pdfjs-dist&#x2F;build&#x2F;pdf&#39;];">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2025-01-11T18:27:03.000Z">
-<meta property="article:modified_time" content="2025-01-12T18:05:46.953Z">
+<meta property="article:modified_time" content="2025-01-12T18:13:41.377Z">
 <meta property="article:author" content="John Doe">
 <meta property="article:tag" content="论文阅读">
 <meta name="twitter:card" content="summary">
@@ -86,7 +86,7 @@
         
   
     <h1 class="p-name article-title" itemprop="headline name">
-      PromptAgent Strategic Planning With Language Models Enables Expert-Level Prompt Optimization
+      PromptAgent
     </h1>
   
 
@@ -94,47 +94,37 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PDF.js PDF Viewer</title>
-    <script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
-</head>
-<body>
-    <div id="pdf-container" style="height: 500px; overflow: auto; border: 1px solid #ccc;"></div>
-    <script>
-        // 设置 PDF 文件的路径
-        const url = './promptagent.pdf'; // 确保 PDF 文件相对于 HTML 文件的路径正确
-        const container = document.getElementById('pdf-container');
-        const pdfjsLib = window['pdfjs-dist/build/pdf'];
-        pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://mozilla.github.io/pdf.js/build/pdf.worker.js';
-        pdfjsLib.getDocument(url).promise.then((pdf) => {
-            for (let i = 1; i <= pdf.numPages; i++) {
-                pdf.getPage(i).then((page) => {
-                    const viewport = page.getViewport({ scale: 1 });
-                    const canvas = document.createElement('canvas');
-                    const context = canvas.getContext('2d');
-                    canvas.height = viewport.height;
-                    canvas.width = viewport.width;
-                    container.appendChild(canvas);
-                    page.render({
-                        canvasContext: context,
-                        viewport: viewport
-                    });
+        <div id="pdf-container" style="height: 500px; overflow: auto; border: 1px solid #ccc;"></div>
+<script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
+<script>
+    const url = '/assets/pdf/promptagent.pdf'; // PDF 文件的路径，确保与 Hexo 部署路径一致
+    const container = document.getElementById('pdf-container');
+    const pdfjsLib = window['pdfjs-dist/build/pdf'];
+    pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://mozilla.github.io/pdf.js/build/pdf.worker.js';
+    pdfjsLib.getDocument(url).promise.then((pdf) => {
+        for (let i = 1; i <= pdf.numPages; i++) {
+            pdf.getPage(i).then((page) => {
+                const viewport = page.getViewport({ scale: 1 });
+                const canvas = document.createElement('canvas');
+                const context = canvas.getContext('2d');
+                canvas.height = viewport.height;
+                canvas.width = viewport.width;
+                container.appendChild(canvas);
+                page.render({
+                    canvasContext: context,
+                    viewport: viewport
                 });
-            }
-        }).catch((error) => {
-            console.error('PDF 加载失败:', error);
-        });
-    </script>
-</body>
-</html>
+            });
+        }
+    }).catch((error) => {
+        container.innerHTML = '<p>PDF 加载失败：' + error.message + '</p>';
+    });
+</script>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2025/01/12/PromptAgent/" data-id="cm5txemq80000ysuchpra5agb" data-title="PromptAgent Strategic Planning With Language Models Enables Expert-Level Prompt Optimization" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2025/01/12/PromptAgent/" data-id="cm5txp0950001bsucgxdlc8of" data-title="PromptAgent" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -146,19 +136,10 @@
     
 <nav id="article-nav">
   
-    <a href="/2025/01/12/test/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          test
-        
-      </div>
-    </a>
   
-  
-    <a href="/2025/01/11/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2025/01/12/test/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">Hello World</div>
+      <div class="article-nav-title">test</div>
     </a>
   
 </nav>
@@ -210,11 +191,11 @@
       <ul>
         
           <li>
-            <a href="/2025/01/12/test/">test</a>
+            <a href="/2025/01/12/PromptAgent/">PromptAgent</a>
           </li>
         
           <li>
-            <a href="/2025/01/12/PromptAgent/">PromptAgent Strategic Planning With Language Models Enables Expert-Level Prompt Optimization</a>
+            <a href="/2025/01/12/test/">test</a>
           </li>
         
           <li>

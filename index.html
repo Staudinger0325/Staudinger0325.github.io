@@ -69,6 +69,72 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-PromptAgent" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2025/01/12/PromptAgent/" class="article-date">
+  <time class="dt-published" datetime="2025-01-11T18:27:03.000Z" itemprop="datePublished">2025-01-12</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2025/01/12/PromptAgent/">PromptAgent</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <div id="pdf-container" style="height: 500px; overflow: auto; border: 1px solid #ccc;"></div>
+<script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
+<script>
+    const url = '/assets/pdf/promptagent.pdf'; // PDF 文件的路径，确保与 Hexo 部署路径一致
+    const container = document.getElementById('pdf-container');
+    const pdfjsLib = window['pdfjs-dist/build/pdf'];
+    pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://mozilla.github.io/pdf.js/build/pdf.worker.js';
+    pdfjsLib.getDocument(url).promise.then((pdf) => {
+        for (let i = 1; i <= pdf.numPages; i++) {
+            pdf.getPage(i).then((page) => {
+                const viewport = page.getViewport({ scale: 1 });
+                const canvas = document.createElement('canvas');
+                const context = canvas.getContext('2d');
+                canvas.height = viewport.height;
+                canvas.width = viewport.width;
+                container.appendChild(canvas);
+                page.render({
+                    canvasContext: context,
+                    viewport: viewport
+                });
+            });
+        }
+    }).catch((error) => {
+        container.innerHTML = '<p>PDF 加载失败：' + error.message + '</p>';
+    });
+</script>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2025/01/12/PromptAgent/" data-id="cm5txp0950001bsucgxdlc8of" data-title="PromptAgent" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB/" rel="tag">论文阅读</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-test" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2025/01/12/test/" class="article-date">
@@ -96,86 +162,10 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2025/01/12/test/" data-id="cm5siwb7q0000lguccfzabbqz" data-title="test" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2025/01/12/test/" data-id="cm5txp0990004bsucg49bdlg4" data-title="test" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-PromptAgent" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2025/01/12/PromptAgent/" class="article-date">
-  <time class="dt-published" datetime="2025-01-11T18:27:03.000Z" itemprop="datePublished">2025-01-12</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2025/01/12/PromptAgent/">PromptAgent Strategic Planning With Language Models Enables Expert-Level Prompt Optimization</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PDF.js PDF Viewer</title>
-    <script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
-</head>
-<body>
-    <div id="pdf-container" style="height: 500px; overflow: auto; border: 1px solid #ccc;"></div>
-    <script>
-        // 设置 PDF 文件的路径
-        const url = './promptagent.pdf'; // 确保 PDF 文件相对于 HTML 文件的路径正确
-        const container = document.getElementById('pdf-container');
-        const pdfjsLib = window['pdfjs-dist/build/pdf'];
-        pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://mozilla.github.io/pdf.js/build/pdf.worker.js';
-        pdfjsLib.getDocument(url).promise.then((pdf) => {
-            for (let i = 1; i <= pdf.numPages; i++) {
-                pdf.getPage(i).then((page) => {
-                    const viewport = page.getViewport({ scale: 1 });
-                    const canvas = document.createElement('canvas');
-                    const context = canvas.getContext('2d');
-                    canvas.height = viewport.height;
-                    canvas.width = viewport.width;
-                    container.appendChild(canvas);
-                    page.render({
-                        canvasContext: context,
-                        viewport: viewport
-                    });
-                });
-            }
-        }).catch((error) => {
-            console.error('PDF 加载失败:', error);
-        });
-    </script>
-</body>
-</html>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2025/01/12/PromptAgent/" data-id="cm5txemq80000ysuchpra5agb" data-title="PromptAgent Strategic Planning With Language Models Enables Expert-Level Prompt Optimization" class="article-share-link"><span class="fa fa-share">Share</span></a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB/" rel="tag">论文阅读</a></li></ul>
-
     </footer>
   </div>
   
@@ -223,7 +213,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2025/01/11/hello-world/" data-id="cm5rtmgkc000078uce7y4e2ib" data-title="Hello World" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2025/01/11/hello-world/" data-id="cm5txp0920000bsuca4g5hla5" data-title="Hello World" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -280,11 +270,11 @@
       <ul>
         
           <li>
-            <a href="/2025/01/12/test/">test</a>
+            <a href="/2025/01/12/PromptAgent/">PromptAgent</a>
           </li>
         
           <li>
-            <a href="/2025/01/12/PromptAgent/">PromptAgent Strategic Planning With Language Models Enables Expert-Level Prompt Optimization</a>
+            <a href="/2025/01/12/test/">test</a>
           </li>
         
           <li>
