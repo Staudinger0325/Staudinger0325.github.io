@@ -1,0 +1,53 @@
+---
+layout: page
+permalink: /publications/
+title: Publications
+description: 
+nav: true
+nav_order: 1
+---
+
+<div class="publications">
+    <ol class="bibliography">
+        <br>
+        <div class="row item">
+            <div class="col-md-3 col-sm-6 col-xs-12 item-img">
+                <a class="image-popup-no-margins" href="{{ '/assets/img/paper/ScholScan-Overview.png' | relative_url }}">
+                    <img src="{{ '/assets/img/paper/ScholScan-Overview.png' | relative_url }}" class="img-thumbnail img-responsive">
+                </a>
+            </div>
+            <div class="col-md-9 col-sm-6 col-xs-12 item-info">
+                <div class="paper"><b> Not Search, But Scan: Benchmarking MLLMs on Scan-Oriented Academic Paper Reasoning </b></div>
+                <div class="author"><b>Rongjin Li</b>, Zichen Tang, Xianghe Wang, Xinyi Hu, Zhengyu Wang, Zhengyu Lu, Yiling Huang, Jiayuan Chen, Weisheng Tan, Jiacheng Liu, Zhongjun Yang, Haihong E
+                </div>
+                <div class="conf"><b>ICLR 2026</b>. </div>
+                <div>
+                [<a href="https://openreview.net/forum?id=GDA1yB6yDP" target="blank">Paper</a>]
+                [<a href="https://bupt-reasoning-lab.github.io/ScholScan/" target="blank">Project Page</a>]
+                [<a href="https://github.com/BUPT-Reasoning-Lab/ScholScan" target="blank">Github</a>]
+                [<a href="https://huggingface.co/datasets/BUPT-Reasoning-Lab/ScholScan" target="blank">Dataset</a>]
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row item">
+            <div class="col-md-3 col-sm-6 col-xs-12 item-img">
+                <a class="image-popup-no-margins" href="{{ '/assets/img/paper/FinMMDocR-Overview.png' | relative_url }}">
+                    <img src="{{ '/assets/img/paper/FinMMDocR-Overview.png' | relative_url }}" class="img-thumbnail img-responsive">
+                </a>
+            </div>
+            <div class="col-md-9 col-sm-6 col-xs-12 item-info">
+                <div class="paper"><b> Not Search, But Scan: Benchmarking MLLMs on Scan-Oriented Academic Paper Reasoning </b></div>
+                <div class="author">Zichen Tang, Haihong E, <b>Rongjin Li</b>, et al.
+                </div>
+                <div class="conf"><b>AAAI 2026</b>. </div>
+                <div>
+                [<a href="https://arxiv.org/abs/2512.24903" target="blank">Paper</a>]
+                [<a href="https://bupt-reasoning-lab.github.io/FinMMDocR/" target="blank">Project Page</a>]
+                [<a href="https://github.com/BUPT-Reasoning-Lab/FinMMDocR" target="blank">Github</a>]
+                [<a href="https://huggingface.co/datasets/BUPT-Reasoning-Lab/FinMMDocR" target="blank">Dataset</a>]
+                </div>
+            </div>
+        </div>
+    </ol>
+</div>
