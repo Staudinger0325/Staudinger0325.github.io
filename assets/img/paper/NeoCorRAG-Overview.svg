@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">NeoCorRAG</title>
+  <desc id="desc">Cover image for the NeoCorRAG publication entry.</desc>
+  <rect width="1600" height="900" fill="#f7fafc"/>
+  <rect width="1600" height="160" fill="#0f3d91"/>
+  <rect x="1120" y="0" width="480" height="900" fill="#e0ecff"/>
+  <rect x="1160" y="220" width="360" height="360" fill="#c7dcff"/>
+  <rect x="80" y="742" width="320" height="72" rx="10" fill="#2563eb"/>
+  <text x="80" y="108" font-family="Arial, Helvetica, sans-serif" font-size="52" font-weight="700" fill="#ffffff">The Web Conference 2026</text>
+  <text x="80" y="340" font-family="Arial Black, Arial, Helvetica, sans-serif" font-size="120" font-weight="900" fill="#0f172a">NeoCorRAG</text>
+  <text x="80" y="486" font-family="Arial, Helvetica, sans-serif" font-size="56" fill="#334155">
+    <tspan x="80" dy="0">Less Irrelevant Information,</tspan>
+    <tspan x="80" dy="74">More Explicit Evidence, and</tspan>
+    <tspan x="80" dy="74">More Effective Recall via Evidence Chains</tspan>
+  </text>
+  <text x="110" y="790" font-family="Arial, Helvetica, sans-serif" font-size="40" font-weight="700" fill="#ffffff">Accepted Paper</text>
+</svg>
