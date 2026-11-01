@@ -4,18 +4,29 @@
 d-article d-contents nav div{display:block;outline:0;margin-bottom:.8em;color:rgba(0,0,0,0.8);font-weight:bold}d-article d-contents nav ul{padding-left:1em;margin-top:0;margin-bottom:6px;list-style-type:none}d-article d-contents nav ul li{margin-bottom:.25em}d-article d-contents .figcaption{line-height:1.4em}d-article d-contents toc-line{border-right:1px solid var(--global-divider-color);grid-column:toc-line}d-article d-footnote{scroll-margin-top:66px}d-appendix{border-top-color:var(--global-divider-color)!important;color:var(--global-distill-app-color)!important}d-appendix h3,d-appendix li,d-appendix span{color:var(--global-distill-app-color)!important}d-appendix a,d-appendix a.footnote-backlink{color:var(--global-distill-app-color)!important}d-appendix a:hover,d-appendix a.footnote-backlink:hover{color:var(--global-hover-color)!important}@media(max-width:1024px){d-article d-contents{display:block;grid-column-start:2;grid-column-end:-2;padding-bottom:.5em;margin-bottom:1em;padding-top:.5em;width:100%;border:1px solid var(--global-divider-color)}d-article d-contents nav{grid-column:none}}
 
 /* Homepage portrait beside the biography, centered above it on small screens. */
-.about-intro .profile-photo {
+.about-intro .profile-photo-frame {
   float: right;
   display: block;
   width: 180px;
   max-width: 100%;
-  height: auto;
+  aspect-ratio: 1280 / 1700;
+  overflow: hidden;
   margin: 0 0 1rem 2rem;
   border-radius: 8px;
 }
 
+.about-intro .profile-photo {
+  display: block;
+  width: 100%;
+  max-width: none;
+  height: auto;
+  /* Keep the lower-right 80% of each axis without changing the frame size. */
+  transform: scale(1.25);
+  transform-origin: bottom right;
+}
+
 @media (max-width: 575.98px) {
-  .about-intro .profile-photo {
+  .about-intro .profile-photo-frame {
     float: none;
     width: 160px;
     margin: 1rem auto 1.5rem;
